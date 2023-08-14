@@ -1,4 +1,4 @@
-#Gabrielli Danker       ED II 
+#Nome: Gabrielli Danker     Matéria: ED II 
 
 class GrafoNaoDirigido:
     def __init__(self):
