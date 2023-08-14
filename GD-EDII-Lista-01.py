@@ -1,4 +1,5 @@
 #Gabrielli Danker       ED II 
+
 class GrafoNaoDirigido:
     def __init__(self):
         self.vertices = {}  # Um dicionário onde as chaves são vértices e os valores são listas de vértices adjacentes.
