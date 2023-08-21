@@ -1,4 +1,4 @@
-#Nome: Gabrielli Danker     Matéria: ED II 
+#Nome: Gabrielli Danker     Matéria: Estrutura de Dados II 
 
 class GrafoNaoDirigido:
     def __init__(self):
@@ -65,14 +65,18 @@ def main():
     grafo.insereV('A')
     grafo.insereV('B')
     grafo.insereV('C')
+    grafo.insereV('D')
+    grafo.insereV('E')
     grafo.insereA('A', 'B')
     grafo.insereA('B', 'C')
+    grafo.insereA('C', 'D')
+    grafo.insereA('C', 'E')
 
-    print("Ordem do grafo:", len(grafo.vertices))  # Saída: 3
-    print("Tamanho do grafo:", len(grafo.arestas()))  # Saída: 2
-    print("Vértices adjacentes a 'B':", grafo.adj('B'))  # Saída: ['A', 'C']
-    print("Grau de 'B':", grafo.grau('B'))  # Saída: 2
-    print("Arestas do grafo:", grafo.arestas())  # Saída: [('A', 'B'), ('B', 'C')]
+    print("Ordem do grafo:", len(grafo.vertices))  # Saída: 5
+    print("Tamanho do grafo:", len(grafo.arestas()))  # Saída: 6
+    print("Vértices adjacentes a 'D':", grafo.adj('D'))  # Saída: ['C']
+    print("Grau de 'D':", grafo.grau('D'))  # Saída: 1
+    print("Arestas do grafo:", grafo.arestas())  # Saída: [('A', 'B'), ('B', 'A'), ('B', 'C'), ('C', 'B'), ('C', 'D'), ('C', 'E'), ('D', 'C'), ('E', 'C')]
 
     print(grafo)  # Saída formatada do grafo
 
