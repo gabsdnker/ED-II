@@ -6,3 +6,5 @@
 - ``Grafos``
 - ``Grafos Não-Dirigidos``
 - ``Grafos Dirigidos``
+- ``Busca em Largura``
+- ``Busca em Profundidade``
