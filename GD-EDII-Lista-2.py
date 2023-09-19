@@ -90,6 +90,27 @@ class GrafoNaoDirigido:
             result += f"{edge}\n"
         return result
 
+     def isConexo(self):
+        if not self.vertices:
+            return True  # Um grafo vazio é considerado conexo
+
+        visitados = set()
+        fila = deque()
+        primeiro_vertice = next(iter(self.vertices))
+
+        fila.append(primeiro_vertice)
+        visitados.add(primeiro_vertice)
+
+        while fila:
+            vertice = fila.popleft()
+
+            for vizinho in self.adj(vertice):
+                if vizinho not in visitados:
+                    fila.append(vizinho)
+                    visitados.add(vizinho)
+
+        return len(visitados) == len(self.vertices)
+    
 def main():
     grafo = GrafoNaoDirigido()
     grafo.insereV('A')
@@ -114,6 +135,8 @@ def main():
     print("Busca em Profundidade:")
     grafo.dfs('A')
 
+    print("Conexidade do Grafo:", grafo.isConexo())  # Saída: True se o grafo for conexo
+    
     print(grafo)  # Saída formatada do grafo
 
 if __name__ == "__main__":
