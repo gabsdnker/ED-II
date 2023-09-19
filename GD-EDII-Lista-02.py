@@ -90,7 +90,7 @@ class GrafoNaoDirigido:
             result += f"{edge}\n"
         return result
 
-     def isConexo(self):
+    def isConexo(self):
         if not self.vertices:
             return True  # Um grafo vazio é considerado conexo
 
