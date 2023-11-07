@@ -1,4 +1,4 @@
-Algoritmo de Floyd
+##Algoritmo de Floyd
 
 - O algoritmo de Floyd-Warshall é implementado para encontrar as distâncias mínimas entre todos os pares de vértices em um grafo ponderado.
 
@@ -10,7 +10,7 @@ Algoritmo de Floyd
 
 - O resultado final é uma matriz que contém as distâncias mínimas entre todos os pares de vértices.
 
-Algoritmo de Kruskal
+##Algoritmo de Kruskal
 
 - É implementado o Algoritmo de Kruskal para encontrar a árvore geradora mínima em um grafo ponderado.
   
