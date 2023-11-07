@@ -8,3 +8,6 @@
 - ``Grafos Dirigidos``
 - ``Busca em Largura``
 - ``Busca em Profundidade``
+- ``Algoritmo de Kruskal``
+- ``Algoritmo de Floyd``
+- ``Conexidade do Grafo``
